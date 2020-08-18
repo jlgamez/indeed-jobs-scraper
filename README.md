@@ -12,9 +12,11 @@ A Python web scraper to automate job search.
 `pipenv install`
 3. Run `pipenv run python indeed_crawler.py` to check it works.
     - It should open up a dialog saying: "Do you wish to scrape Indeed with the default search config?(yes/no)"
-    - Enter "yes". It should look for the most awesome job
+    - Enter "yes". It should look for Spanish teacher jobs in New York
 
 ## How to use Indeed Jobs Scraper
+
+Run `pipenv run python indeed_crawler.py`
 
 Upon initiation, you will be prompted to either use the default search configuration or to create a new search.
 
