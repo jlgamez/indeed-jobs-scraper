@@ -1,7 +1,7 @@
 # results folder content
 results/*
 # exception to results folder
-!results/.gitkeep.txt
+!results/.ghost.txt
 
 
 # Byte-compiled / optimized / DLL files
