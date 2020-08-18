@@ -1,0 +1,14 @@
+{
+    "titleMatching": {
+        "select": [
+            {
+                "term": "product owner"
+            }
+        ],
+        "discard": []
+    },
+    "descriptionMatching": {
+        "select": [],
+        "discard": []
+    }
+}

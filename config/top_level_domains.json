@@ -1,0 +1,365 @@
+[{
+	"model": "dmakr.domain",
+	"pk": 5,
+	"fields": {
+		"tld": "com",
+		"country": "Commercial organizations"
+	}
+}, {
+	"model": "dmakr.domain",
+	"pk": 23,
+	"fields": {
+		"tld": "ae",
+		"country": "United Arab Emirates"
+	}
+}, {
+	"model": "dmakr.domain",
+	"pk": 32,
+	"fields": {
+		"tld": "ar",
+		"country": "Argentina"
+	}
+}, {
+	"model": "dmakr.domain",
+	"pk": 34,
+	"fields": {
+		"tld": "at",
+		"country": "Austria"
+	}
+}, {
+	"model": "dmakr.domain",
+	"pk": 35,
+	"fields": {
+		"tld": "au",
+		"country": "Australia"
+	}
+}, {
+	"model": "dmakr.domain",
+	"pk": 42,
+	"fields": {
+		"tld": "be",
+		"country": "Belgium"
+	}
+}, {
+	"model": "dmakr.domain",
+	"pk": 45,
+	"fields": {
+		"tld": "bh",
+		"country": "Bahrain"
+	}
+}, {
+	"model": "dmakr.domain",
+	"pk": 52,
+	"fields": {
+		"tld": "br",
+		"country": "Brazil"
+	}
+}, {
+	"model": "dmakr.domain",
+	"pk": 59,
+	"fields": {
+		"tld": "ca",
+		"country": "Canada"
+	}
+}, {
+	"model": "dmakr.domain",
+	"pk": 64,
+	"fields": {
+		"tld": "ch",
+		"country": "Switzerland"
+	}
+}, {
+	"model": "dmakr.domain",
+	"pk": 67,
+	"fields": {
+		"tld": "cl",
+		"country": "Chile"
+	}
+}, {
+	"model": "dmakr.domain",
+	"pk": 69,
+	"fields": {
+		"tld": "cn",
+		"country": "People's Republic of China"
+	}
+}, {
+	"model": "dmakr.domain",
+	"pk": 70,
+	"fields": {
+		"tld": "co",
+		"country": "Colombia"
+	}
+}, {
+	"model": "dmakr.domain",
+	"pk": 76,
+	"fields": {
+		"tld": "cz",
+		"country": "Czech Republic"
+	}
+}, {
+	"model": "dmakr.domain",
+	"pk": 77,
+	"fields": {
+		"tld": "de",
+		"country": "Germany"
+	}
+}, {
+	"model": "dmakr.domain",
+	"pk": 79,
+	"fields": {
+		"tld": "dk",
+		"country": "Denmark"
+	}
+}, {
+	"model": "dmakr.domain",
+	"pk": 88,
+	"fields": {
+		"tld": "es",
+		"country": "Spain"
+	}
+}, {
+	"model": "dmakr.domain",
+	"pk": 91,
+	"fields": {
+		"tld": "fi",
+		"country": "Finland"
+	}
+}, {
+	"model": "dmakr.domain",
+	"pk": 96,
+	"fields": {
+		"tld": "fr",
+		"country": "France"
+	}
+}, {
+	"model": "dmakr.domain",
+	"pk": 98,
+	"fields": {
+		"tld": "gb",
+		"country": "United Kingdom"
+	}
+}, {
+	"model": "dmakr.domain",
+	"pk": 110,
+	"fields": {
+		"tld": "gr",
+		"country": "Greece"
+	}
+}, {
+	"model": "dmakr.domain",
+	"pk": 116,
+	"fields": {
+		"tld": "hk",
+		"country": "Hong Kong"
+	}
+}, {
+	"model": "dmakr.domain",
+	"pk": 121,
+	"fields": {
+		"tld": "hu",
+		"country": "Hungary"
+	}
+}, {
+	"model": "dmakr.domain",
+	"pk": 123,
+	"fields": {
+		"tld": "ie",
+		"country": "Ireland"
+	}
+}, {
+	"model": "dmakr.domain",
+	"pk": 124,
+	"fields": {
+		"tld": "il",
+		"country": "Israel"
+	}
+}, {
+	"model": "dmakr.domain",
+	"pk": 126,
+	"fields": {
+		"tld": "in",
+		"country": "India"
+	}
+}, {
+	"model": "dmakr.domain",
+	"pk": 131,
+	"fields": {
+		"tld": "it",
+		"country": "Italy"
+	}
+}, {
+	"model": "dmakr.domain",
+	"pk": 135,
+	"fields": {
+		"tld": "jp",
+		"country": "Japan"
+	}
+}, {
+	"model": "dmakr.domain",
+	"pk": 143,
+	"fields": {
+		"tld": "kr",
+		"country": "South Korea"
+	}
+}, {
+	"model": "dmakr.domain",
+	"pk": 144,
+	"fields": {
+		"tld": "kw",
+		"country": "Kuwait"
+	}
+}, {
+	"model": "dmakr.domain",
+	"pk": 155,
+	"fields": {
+		"tld": "lu",
+		"country": "Luxembourg"
+	}
+}, {
+	"model": "dmakr.domain",
+	"pk": 177,
+	"fields": {
+		"tld": "mx",
+		"country": "Mexico"
+	}
+}, {
+	"model": "dmakr.domain",
+	"pk": 178,
+	"fields": {
+		"tld": "my",
+		"country": "Malaysia"
+	}
+}, {
+	"model": "dmakr.domain",
+	"pk": 186,
+	"fields": {
+		"tld": "nl",
+		"country": "Netherlands"
+	}
+}, {
+	"model": "dmakr.domain",
+	"pk": 187,
+	"fields": {
+		"tld": "no",
+		"country": "Norway"
+	}
+}, {
+	"model": "dmakr.domain",
+	"pk": 191,
+	"fields": {
+		"tld": "nz",
+		"country": "New Zealand"
+	}
+}, {
+	"model": "dmakr.domain",
+	"pk": 192,
+	"fields": {
+		"tld": "om",
+		"country": "Oman"
+	}
+}, {
+	"model": "dmakr.domain",
+	"pk": 194,
+	"fields": {
+		"tld": "pe",
+		"country": "Peru"
+	}
+}, {
+	"model": "dmakr.domain",
+	"pk": 197,
+	"fields": {
+		"tld": "ph",
+		"country": "Philippines"
+	}
+}, {
+	"model": "dmakr.domain",
+	"pk": 198,
+	"fields": {
+		"tld": "pk",
+		"country": "Pakistan"
+	}
+}, {
+	"model": "dmakr.domain",
+	"pk": 199,
+	"fields": {
+		"tld": "pl",
+		"country": "Poland"
+	}
+}, {
+	"model": "dmakr.domain",
+	"pk": 204,
+	"fields": {
+		"tld": "pt",
+		"country": "Portugal"
+	}
+}, {
+	"model": "dmakr.domain",
+	"pk": 209,
+	"fields": {
+		"tld": "ro",
+		"country": "Romania"
+	}
+}, {
+	"model": "dmakr.domain",
+	"pk": 211,
+	"fields": {
+		"tld": "ru",
+		"country": "Russia"
+	}
+}, {
+	"model": "dmakr.domain",
+	"pk": 213,
+	"fields": {
+		"tld": "sa",
+		"country": "Saudi Arabia"
+	}
+}, {
+	"model": "dmakr.domain",
+	"pk": 217,
+	"fields": {
+		"tld": "se",
+		"country": "Sweden"
+	}
+}, {
+	"model": "dmakr.domain",
+	"pk": 237,
+	"fields": {
+		"tld": "th",
+		"country": "Thailand"
+	}
+}, {
+	"model": "dmakr.domain",
+	"pk": 245,
+	"fields": {
+		"tld": "tr",
+		"country": "Turkey"
+	}
+}, {
+	"model": "dmakr.domain",
+	"pk": 248,
+	"fields": {
+		"tld": "tw",
+		"country": "Taiwan"
+	}
+}, {
+	"model": "dmakr.domain",
+	"pk": 254,
+	"fields": {
+		"tld": "us",
+		"country": "United States"
+	}
+}, {
+	"model": "dmakr.domain",
+	"pk": 259,
+	"fields": {
+		"tld": "ve",
+		"country": "Venezuela"
+	}
+}, {
+	"model": "dmakr.domain",
+	"pk": 262,
+	"fields": {
+		"tld": "vn",
+		"country": "Vietnam"
+	}
+}]

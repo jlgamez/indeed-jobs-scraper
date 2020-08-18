@@ -1,0 +1,28 @@
+{
+    "defaultSearch": [
+        {
+            "baseUrl": "https://www.indeed.ie/jobs?"
+        },
+        {
+            "jobTitle": "q=product+owner"
+        },
+        {
+            "location": "l=dublin"
+        },
+        {
+            "salary": "%2440%2C000"
+        },
+        {
+            "postsSince": "fromage=10"
+        },
+        {
+            "sort": "sort=date"
+        },
+        {
+            "viewJobUrl": "https://www.indeed.ie/viewjob?jk="
+        },
+        {
+            "searchTitle": "Product Owner"
+        }
+    ]
+}
