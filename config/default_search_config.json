@@ -4,7 +4,7 @@
             "baseUrl": "https://www.indeed.com/jobs?"
         },
         {
-            "jobTitle": "q=dungeon+master"
+            "jobTitle": "q=spanish+teacher"
         },
         {
             "location": "l=new+york"
@@ -13,7 +13,7 @@
             "salary": null
         },
         {
-            "postsSince": null
+            "postsSince": "fromage=3"
         },
         {
             "sort": "sort=date"
@@ -22,7 +22,7 @@
             "viewJobUrl": "https://www.indeed.com/viewjob?jk="
         },
         {
-            "searchTitle": "Dungeon Master"
+            "searchTitle": "Spanish teacher"
         }
     ]
 }
