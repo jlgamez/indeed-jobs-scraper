@@ -2,6 +2,7 @@
 A Python web scraper to automate job search. 
 
 ## **Requirements for MacOs**
+- Google Chrome version 84
 - pip3: `pip3 install --upgrade pip`
 - pipenv: `pip3 install pipenv`
 - Python 3.8 or higher: will be automatically installed in the local virtual environment
