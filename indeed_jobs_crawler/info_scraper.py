@@ -1,12 +1,14 @@
+import re
+import time
 import requests
 from bs4 import BeautifulSoup
-import re
-import config.chromedriver_os as OS
 from selenium import webdriver
-from selenium.webdriver.support.wait import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.common.by import By
 from selenium.common.exceptions import ElementClickInterceptedException, TimeoutException, NoSuchElementException
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.wait import WebDriverWait
+import config.chromedriver_os as OS
+import json
 
 
 def set_soup_object(url):
@@ -116,14 +118,26 @@ def get_days_since_posted(site, days_since_posted_list):
     return scraped_days
 
 
+def set_driver():
+    with open('config/driver_window.json') as window:
+        minimised = json.load(window).get('minimised')
+    chrome_driver = OS.get_driver_name()
+    driver = webdriver.Chrome('indeed_jobs_crawler/' + chrome_driver)
+    if minimised:
+        driver.minimize_window()
+    else:
+        driver.maximize_window()
+
+    return driver
+
+
 def get_job_description(url, descriptions_list):
     # Use selenium to try to access job full description.
-    chrome_driver = OS.get_driver_name()
     scraped_descriptions = descriptions_list
+    driver = set_driver()
+    wait = WebDriverWait(driver, 10)
 
-    driver = webdriver.Chrome('indeed_jobs_crawler/' + chrome_driver)
-    driver.maximize_window()
-    wait = WebDriverWait(driver, 4)
+    print('\nGETTING JOBS DESCRIPTIONS...\n')
 
     driver.get(url)
     wait.until(EC.presence_of_all_elements_located((By.CLASS_NAME, 'jobsearch-SerpJobCard')))
@@ -149,13 +163,8 @@ def get_job_description(url, descriptions_list):
 
 
 def paginate_next(url):
-    import time
-
-    chrome_driver = OS.get_driver_name()
-    driver = webdriver.Chrome('indeed_jobs_crawler/' + chrome_driver)
-    wait = WebDriverWait(driver, 3)
-    driver.maximize_window()
-
+    driver = set_driver()
+    wait = WebDriverWait(driver, 10)
     driver.get(url)
 
     # Exclude aria-label atr containing numbers
@@ -166,7 +175,6 @@ def paginate_next(url):
     except NoSuchElementException:
         # In case of NoSuchElementException
         # set aria-label to a non-valid string (process will end if it contains digits)
-        next_url = None
         aria_label = '4321'
 
     # if next button is present (i.e aria label doesn't contain numbers, try to click)

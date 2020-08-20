@@ -11,5 +11,6 @@ def get_driver_name():
     else:
         print('\nIt seems your current OS is doesn\'t support chromedriver. You need to run the code on Ubuntu, MacOs, '
               'or Windows')
+        exit()
 
     return chrome_driver

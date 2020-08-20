@@ -1,7 +1,7 @@
 # **Indeed Jobs Scraper**
 A Python web scraper to automate job search. 
 
-## **Requirements for MacOs**
+## **Requirements**
 - Google Chrome version 84
 - pip3: `pip3 install --upgrade pip`
 - pipenv: `pip3 install pipenv`
@@ -17,7 +17,9 @@ A Python web scraper to automate job search.
 
 ## How to use Indeed Jobs Scraper
 
-Run `pipenv run python indeed_crawler.py`
+If you want to see how the bot interacts with the site open `config/matching_terms.json`, change the `true` value to `false` and save it.
+
+To launch the bot, run `pipenv run python indeed_crawler.py`
 
 Upon initiation, you will be prompted to either use the default search configuration or to create a new search.
 
