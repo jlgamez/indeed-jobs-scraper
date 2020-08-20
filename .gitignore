@@ -1,3 +1,7 @@
+# Config files
+config/default_search_config.json
+config/matching_terms.json
+
 # Results folder content
 results/*
 # Exception to results folder
