@@ -1,6 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 import re
+import config.chromedriver_os as OS
 from selenium import webdriver
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -117,11 +118,10 @@ def get_days_since_posted(site, days_since_posted_list):
 
 def get_job_description(url, descriptions_list):
     # Use selenium to try to access job full description.
-    # handle ElementClickInterceptedException.
-    # If not possible, extract preliminary description
+    chrome_driver = OS.get_driver_name()
     scraped_descriptions = descriptions_list
 
-    driver = webdriver.Chrome('indeed_jobs_crawler/chromedriver')
+    driver = webdriver.Chrome('indeed_jobs_crawler/' + chrome_driver)
     driver.maximize_window()
     wait = WebDriverWait(driver, 4)
 
@@ -142,23 +142,6 @@ def get_job_description(url, descriptions_list):
             # if ElementClickInterceptedException, scroll away and try again
             driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
             click_on_job_and_add_description(job)
-        # else:  # extract only preliminary description.
-            # summary_div = job.find_element_by_class_name('summary')
-            # Obtain HTML of preliminary description's bullet points
-            # with selenium and use bs4 to scrape it
-            #try:
-            #    summary_bullet_points = summary_div.find_element_by_tag_name('ul').get_attribute('innerHTML')
-            #    soup_preliminary_desc = BeautifulSoup(summary_bullet_points, 'html.parser')
-                # store all <li> elements' text of preliminary description in a
-                # single string
-            #    preliminary_desc_lines = soup_preliminary_desc.find_all('li')
-            #    full_preliminary_desc = ''
-            #    for line in preliminary_desc_lines:
-            #        full_preliminary_desc += line.text.strip() + '\n'
-            #    scraped_descriptions.append(full_preliminary_desc)
-            # except NoSuchElementException:
-            #    preliminary_desc = summary_div.text
-        #    scraped_descriptions.append(preliminary_desc)
 
     driver.close()
     driver.quit()
@@ -167,7 +150,9 @@ def get_job_description(url, descriptions_list):
 
 def paginate_next(url):
     import time
-    driver = webdriver.Chrome('indeed_jobs_crawler/chromedriver')
+
+    chrome_driver = OS.get_driver_name()
+    driver = webdriver.Chrome('indeed_jobs_crawler/' + chrome_driver)
     wait = WebDriverWait(driver, 3)
     driver.maximize_window()
 
