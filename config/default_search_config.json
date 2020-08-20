@@ -1,28 +1,28 @@
 {
     "defaultSearch": [
         {
-            "baseUrl": "https://www.indeed.com/jobs?"
+            "baseUrl": "https://www.indeed.ie/jobs?"
         },
         {
-            "jobTitle": "q=spanish+teacher"
+            "jobTitle": "q=product+owner"
         },
         {
-            "location": "l=new+york"
+            "location": "l=dublin"
         },
         {
-            "salary": null
+            "salary": "%2440%2C000"
         },
         {
-            "postsSince": "fromage=3"
+            "postsSince": "fromage=6"
         },
         {
             "sort": "sort=date"
         },
         {
-            "viewJobUrl": "https://www.indeed.com/viewjob?jk="
+            "viewJobUrl": "https://www.indeed.ie/viewjob?jk="
         },
         {
-            "searchTitle": "Spanish teacher"
+            "searchTitle": "product owner"
         }
     ]
 }

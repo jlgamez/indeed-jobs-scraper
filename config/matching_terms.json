@@ -1,6 +1,10 @@
 {
     "titleMatching": {
-        "select": [],
+        "select": [
+            {
+                "term": "product"
+            }
+        ],
         "discard": []
     },
     "descriptionMatching": {
