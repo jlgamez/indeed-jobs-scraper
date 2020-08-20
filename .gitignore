@@ -1,7 +1,11 @@
-# results folder content
+# Config files
+config/default_search_config.json
+config/matching_terms.json
+
+# Results folder content
 results/*
-# exception to results folder
-!results/.ghost.txt
+# Exception to results folder
+!results/.gitkeep.txt
 
 
 # Byte-compiled / optimized / DLL files
