@@ -17,7 +17,7 @@ A Python web scraper to automate job search.
 
 ## How to use Indeed Jobs Scraper
 
-If you want to see how the bot interacts with the site open `config/matching_terms.json`, change the `true` value to `false` and save it.
+If you don't want to see how the bot interacts with the site through the browser open `config/matching_terms.json`, change the `false` value to `true` and save it. This will minimise the browser.
 
 To launch the bot, run `pipenv run python indeed_crawler.py`
 
