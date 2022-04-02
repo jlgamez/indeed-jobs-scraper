@@ -76,7 +76,7 @@ class BuildUrl:
             location = 'l=' + qsm.make_query_param(location_keywords).lower()
 
         # Ask the user for their preferred base salary
-        salary_input = input('\nWhat\'s your base salary?(in thousands - no \'0000\' '
+        salary_input = input('\nWhat\'s your base salary?(in thousands - no \'000\' '
                              'after the number)\n'
                              '\tHit enter to omit the salary\n')
 
