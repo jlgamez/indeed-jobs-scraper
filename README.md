@@ -1,13 +1,13 @@
-# **Indeed Jobs Scraper**
+# Indeed Jobs Scraper
 A Python web scraper to automate job search. 
 
-## **Requirements**
+## Requirements
 - Google Chrome version 84
 - pip3: `pip3 install --upgrade pip`
 - pipenv: `pip3 install pipenv`
 - Python 3.8 or higher: will be automatically installed in the local virtual environment
 
-## **Indeed Jobs Scraper setup**
+## Indeed Jobs Scraper setup
 1. Clone this repository in your machine
 2. Traverse to the project directory and create a virtual environment:
 `pipenv install`
@@ -42,7 +42,7 @@ You can also skip entering matching terms, in which case the bot will yield ever
 
 Your search parameters and matching terms will be saved as default configuration. Therefore, in your next search you will only have to enter "yes" when prompted to use the default configuration.
 
-#### **Warning**:
+#### Warning:
 
 The logic behind the terms matching will make the bot bring you jobs which either title or description contains selected terms, provided either the description or the title doesn't contain unwanted terms.
 
