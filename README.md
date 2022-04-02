@@ -61,3 +61,17 @@ You will get a csv file in the 'results' folder with:
 - Post recency
 - Jobs description
 - Url to apply
+
+## Known Bugs
+
+> Warning: Python 3.8 was not found on your system
+
+If you have python3.9+ installed and encounter this error, try running the simpler command `python3 indeed_crawler.py`.
+
+> selenium.common.exceptions.SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version XX
+
+If you see this error, try updating the ChromeDriver binary you are using. The default binaries have been placed in the `indeed_jobs_crawler/` directory. Try replacing the driver in this directory with an <i>up-to-date</i> ChromeDriver, downloaded from a site like [chromium](https://chromedriver.chromium.org/downloads) or [googleapis](https://chromedriver.storage.googleapis.com/index.html).
+
+## License
+
+Affero General Public License v3.0
