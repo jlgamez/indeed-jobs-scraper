@@ -1,13 +1,13 @@
-# **Indeed Jobs Scraper**
+# Indeed Jobs Scraper
 A Python web scraper to automate job search. 
 
-## **Requirements**
+## Requirements
 - Google Chrome version 84
 - pip3: `pip3 install --upgrade pip`
 - pipenv: `pip3 install pipenv`
 - Python 3.8 or higher: will be automatically installed in the local virtual environment
 
-## **Indeed Jobs Scraper setup**
+## Indeed Jobs Scraper setup
 1. Clone this repository in your machine
 2. Traverse to the project directory and create a virtual environment:
 `pipenv install`
@@ -42,7 +42,7 @@ You can also skip entering matching terms, in which case the bot will yield ever
 
 Your search parameters and matching terms will be saved as default configuration. Therefore, in your next search you will only have to enter "yes" when prompted to use the default configuration.
 
-#### **Warning**:
+#### Warning:
 
 The logic behind the terms matching will make the bot bring you jobs which either title or description contains selected terms, provided either the description or the title doesn't contain unwanted terms.
 
@@ -61,3 +61,23 @@ You will get a csv file in the 'results' folder with:
 - Post recency
 - Jobs description
 - Url to apply
+
+## Potential Runtime Problems
+
+### Dependency Errors
+
+> Warning: Python 3.8 was not found on your system
+
+If you have python3.9+ installed and encounter this error, try running the simpler command:
+
+```
+python3 indeed_crawler.py
+```
+
+> selenium.common.exceptions.SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version XX
+
+If you see this error, try updating the ChromeDriver binary you are using. The default binaries have been placed in the `indeed_jobs_crawler/` directory. Try replacing the driver in this directory with an <i>up-to-date</i> ChromeDriver, downloaded from a site like [chromium](https://chromedriver.chromium.org/downloads) or [googleapis](https://chromedriver.storage.googleapis.com/index.html).
+
+## License
+
+Affero General Public License v3.0
