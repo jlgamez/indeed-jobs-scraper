@@ -2,13 +2,28 @@ import re
 import time
 import requests
 from bs4 import BeautifulSoup
+
 from selenium import webdriver
+
+# Added for firefox support
+from selenium.webdriver.firefox.options import Options
+
 from selenium.common.exceptions import ElementClickInterceptedException, TimeoutException, NoSuchElementException
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
 import config.chromedriver_os as OS
 import json
+
+## Options -- taken from https://faun.pub/how-to-install-selenium-in-linux-e8928b2b709
+#custom_gecko_options = Options()
+#custom_gecko_options.add_argument("--headless")
+#
+#browser = webdriver.Firefox(options=custom_gecko_options)
+#browser.get("https://www.themathjester.com/lab/index.php")
+#browser.title
+#print(browser.page_source)
+#browser.quit()
 
 
 def set_soup_object(url):
@@ -35,8 +50,10 @@ def get_jobs_titles(site, titles_list):
 
 def get_jobs_locations(site, locations_list):
     scraped_job_locations = locations_list
+
     # Find <div> tags with class 'recJobLoc'
     loc_div = site.find_all('div', attrs={'class': 'recJobLoc'})
+    
     # Store all attributes in a dictionary.
     # Then append the value of 'data-rc-loc' into job_locations
     for loc in loc_div:
@@ -122,11 +139,15 @@ def set_driver():
     with open('config/driver_window.json') as window:
         minimised = json.load(window).get('minimised')
     chrome_driver = OS.get_driver_name()
+    
+    #custom_gecko_options = Options()
+    #custom_gecko_options.add_argument("--headless")
+    #driver = webdriver.Firefox(options=custom_gecko_options)
     driver = webdriver.Chrome('indeed_jobs_crawler/' + chrome_driver)
-    if minimised:
-        driver.minimize_window()
-    else:
-        driver.maximize_window()
+    #if minimised:
+    #    driver.minimize_window()
+    #else:
+    #    driver.maximize_window()
 
     return driver
 
