@@ -62,7 +62,9 @@ You will get a csv file in the 'results' folder with:
 - Jobs description
 - Url to apply
 
-## Known Bugs
+## Potential Runtime Problems
+
+### Dependency Errors
 
 > Warning: Python 3.8 was not found on your system
 
