@@ -35,13 +35,14 @@ def get_jobs_titles(site, titles_list):
 
 def get_jobs_locations(site, locations_list):
     scraped_job_locations = locations_list
-    # Find <div> tags with class 'recJobLoc'
-    loc_div = site.find_all('div', attrs={'class': 'recJobLoc'})
-    # Store all attributes in a dictionary.
-    # Then append the value of 'data-rc-loc' into job_locations
+    loc_div = site.find_all('div', attrs={"class": "companyLocation"})
     for loc in loc_div:
-        loc_attrs = loc.attrs
-        scraped_job_locations.append(loc_attrs['data-rc-loc'])
+        loc = str(loc)
+        next_loc_name = loc
+        startInd = loc.index(">") + 1
+        endInd = loc[1:].index("<") + 1
+        next_loc_name = next_loc_name[startInd:endInd]
+        scraped_job_locations.append(next_loc_name)
 
     return scraped_job_locations
 
