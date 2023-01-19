@@ -7,7 +7,8 @@ from selenium.common.exceptions import ElementClickInterceptedException, Timeout
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
-import config.chromedriver_os as OS
+from selenium.webdriver.chrome.service import Service as ChromeService
+from webdriver_manager.chrome import ChromeDriverManager
 import json
 
 
@@ -121,8 +122,7 @@ def get_days_since_posted(site, days_since_posted_list):
 def set_driver():
     with open('config/driver_window.json') as window:
         minimised = json.load(window).get('minimised')
-    chrome_driver = OS.get_driver_name()
-    driver = webdriver.Chrome('indeed_jobs_crawler/' + chrome_driver)
+    driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
     if minimised:
         driver.minimize_window()
     else:
